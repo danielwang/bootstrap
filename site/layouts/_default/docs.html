@@ -1,5 +1,4 @@
 {{ define "main" }}
-  {{ partial "docs-subnav" . }}
 
   <div class="container-xxl my-md-4 bd-layout">
     <aside class="bd-sidebar">
@@ -13,7 +12,6 @@
           <h1 class="bd-title" id="content">{{ .Title | markdownify }}</h1>
         </div>
         <p class="bd-lead">{{ .Page.Params.Description | markdownify }}</p>
-        {{ partial "ads" . }}
       </div>
 
       {{ if (eq .Page.Params.toc true) }}
