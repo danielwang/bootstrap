@@ -1,7 +1,11 @@
-<header class="navbar navbar-expand-md navbar-dark bd-navbar">
+<header id="cad-navbar" class="navbar navbar-expand-md navbar-dark bd-navbar position-relative mb-4">
   <nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation">
     <a class="navbar-brand p-0 me-2" href="/" aria-label="CampaignAgent Design">
-      CAD
+      <svg width="94" height="32" viewBox="0 0 118 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M96.4079 40C108.881 40 117.576 32.084 117.576 19.97C117.576 7.97601 108.881 0 96.3479 0H80.5764V40H96.4079ZM96.3479 32.5037H89.0918V7.49625H96.4079C104.563 7.49625 108.881 12.9535 108.881 19.97C108.881 26.8066 104.264 32.5037 96.3479 32.5037Z" fill="white"/>
+        <path d="M57.3014 0L78.5764 40H69.4017L66.3207 34.0598H48.2328L45.2542 40H36.0244L57.3014 0ZM62.2841 26.8929L57.3014 16.7664L52.3699 26.8929H62.2841Z" fill="white"/>
+        <path d="M20.7462 40C9.32451 40 0 31.0139 0 19.9726C0 8.98229 9.32451 0 20.7462 0C28.4913 0 35.3383 4.28241 39.0244 10.571L31.2775 13.5764C28.9619 10.2479 25.0122 7.55986 20.7444 7.55986C13.9011 7.55986 8.3738 13.3667 8.3738 19.9726C8.3738 26.5842 13.9011 32.4496 20.7444 32.4496C25.0122 32.4496 28.96 29.6992 31.2775 26.3103L39.0244 29.3289C35.3383 35.7176 28.4913 40 20.7462 40Z" fill="white"/>
+        </svg>        
     </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,22 +14,22 @@
 
     <div class="collapse navbar-collapse" id="bdNavbar">
       <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
-        <li class="nav-item col-6 col-md-auto">
+        <li class="nav-item col-6 col-md-auto mb-0">
           <a class="nav-link p-2{{ if .IsHome }} active" aria-current="page{{ end }}" href="/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Home</a>
         </li>
-        <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link p-2{{ if eq .Page.Layout "docs" }} active" aria-current="true{{ end }}" href="/docs/{{ .Site.Params.docs_version }}/getting-started/introduction/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Docs</a>
+        <li class="nav-item col-6 col-md-auto mb-0">
+          <a class="nav-link p-2{{ if eq .Page.Layout "docs" }} active" aria-current="true{{ end }}" href="/docs/{{ .Site.Params.docs_version }}/getting-started/introduction/">Docs</a>
         </li>
-        <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link p-2{{ if eq .Page.Title "Examples" }} active" aria-current="true{{ end }}" href="/docs/{{ .Site.Params.docs_version }}/examples/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">Examples</a>
+        <li class="nav-item col-6 col-md-auto mb-0">
+          <a class="nav-link p-2{{ if eq .Page.Title "Examples" }} active" aria-current="true{{ end }}" href="https://cad.campaignagent.com.au/">Examples</a>
         </li>
-        <li class="nav-item col-6 col-md-auto">
+        <li class="nav-item col-6 col-md-auto mb-0">
           <a class="nav-link p-2" href="https://fontawesome.com/v5.15/icons?d=gallery&p=2" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Icons');" target="_blank" rel="noopener">Icons</a>
         </li>
-        <!-- <li class="nav-item col-6 col-md-auto">
+        <!-- <li class="nav-item col-6 col-md-auto mb-0">
           <a class="nav-link p-2" href="{{ .Site.Params.themes }}" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes');" target="_blank" rel="noopener">Themes</a>
         </li>
-        <li class="nav-item col-6 col-md-auto">
+        <li class="nav-item col-6 col-md-auto mb-0">
           <a class="nav-link p-2" href="{{ .Site.Params.blog }}" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Blog');" target="_blank" rel="noopener">Blog</a>
         </li> -->
       </ul>
@@ -40,4 +44,9 @@
       </ul>
     </div>
   </nav>
+  <div class="wave">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
+  </div>
 </header>
