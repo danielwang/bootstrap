@@ -1,14 +1,14 @@
 ---
 layout: docs
 title: Buttons
-description: Use Bootstrap's custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.
+description: Use button for actions in forms, dialogs, and more with support for multiple sizes, states, and more.
 group: components
 toc: true
 ---
 
 ## Examples
 
-Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.
+CAD includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.
 
 {{< example >}}
 {{< buttons.inline >}}
@@ -35,14 +35,14 @@ The `.btn` classes are designed to be used with the `<button>` element. However,
 When using button classes on `<a>` elements that are used to trigger in-page functionality (like collapsing content), rather than linking to new pages or sections within the current page, these links should be given a `role="button"` to appropriately convey their purpose to assistive technologies such as screen readers.
 
 {{< example >}}
-<a class="btn btn-primary" href="#" role="button">Link</a>
-<button class="btn btn-primary" type="submit">Button</button>
-<input class="btn btn-primary" type="button" value="Input">
-<input class="btn btn-primary" type="submit" value="Submit">
-<input class="btn btn-primary" type="reset" value="Reset">
+<a class="btn btn-control" href="#" role="button">Link</a>
+<button class="btn btn-control" type="submit">Button</button>
+<input class="btn btn-control" type="button" value="Input">
+<input class="btn btn-control" type="submit" value="Submit">
+<input class="btn btn-control" type="reset" value="Reset">
 {{< /example >}}
 
-## Outline buttons
+<!-- ## Outline buttons
 
 In need of a button, but not the hefty background colors they bring? Replace the default modifier classes with the `.btn-outline-*` ones to remove all background images and colors on any button.
 
@@ -56,7 +56,7 @@ In need of a button, but not the hefty background colors they bring? Replace the
 
 {{< callout info >}}
 Some of the button styles use a relatively light foreground color, and should only be used on a dark background in order to have sufficient contrast.
-{{< /callout >}}
+{{< /callout >}} -->
 
 ## Sizes
 
@@ -105,7 +105,7 @@ Create responsive stacks of full-width, "block buttons" like those in Bootstrap 
 {{< example >}}
 <div class="d-grid gap-2">
   <button class="btn btn-primary" type="button">Button</button>
-  <button class="btn btn-primary" type="button">Button</button>
+  <button class="btn btn-secondary" type="button">Button</button>
 </div>
 {{< /example >}}
 
@@ -114,7 +114,7 @@ Here we create a responsive variation, starting with vertically stacked buttons 
 {{< example >}}
 <div class="d-grid gap-2 d-md-block">
   <button class="btn btn-primary" type="button">Button</button>
-  <button class="btn btn-primary" type="button">Button</button>
+  <button class="btn btn-secondary" type="button">Button</button>
 </div>
 {{< /example >}}
 
@@ -122,8 +122,8 @@ You can adjust the width of your block buttons with grid column width classes. F
 
 {{< example >}}
 <div class="d-grid gap-2 col-6 mx-auto">
-  <button class="btn btn-primary" type="button">Button</button>
-  <button class="btn btn-primary" type="button">Button</button>
+  <button class="btn btn-dark" type="button">Button</button>
+  <button class="btn btn-secondary" type="button">Button</button>
 </div>
 {{< /example >}}
 
@@ -132,11 +132,11 @@ Additional utilities can be used to adjust the alignment of buttons when horizon
 {{< example >}}
 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
   <button class="btn btn-primary me-md-2" type="button">Button</button>
-  <button class="btn btn-primary" type="button">Button</button>
+  <button class="btn btn-secondary" type="button">Button</button>
 </div>
 {{< /example >}}
 
-## Button plugin
+<!-- ## Button plugin
 
 The button plugin allows you to create simple on/off toggle buttons.
 
@@ -226,4 +226,4 @@ There are three mixins for buttons: button and button outline variant mixins (bo
 
 Button variants (for regular and outline buttons) use their respective mixins with our `$theme-colors` map to generate the modifier classes in `scss/_buttons.scss`.
 
-{{< scss-docs name="btn-variant-loops" file="scss/_buttons.scss" >}}
+{{< scss-docs name="btn-variant-loops" file="scss/_buttons.scss" >}} -->
