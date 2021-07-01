@@ -1,6 +1,6 @@
 languageCode:           "en"
-title:                  "Bootstrap"
-baseURL:                "https://getbootstrap.com"
+title:                  "CAD"
+baseURL:                "https://cad.campaignagent.com.au"
 enableInlineShortcodes: true
 
 markup:
@@ -9,6 +9,7 @@ markup:
       unsafe:           true
   highlight:
     noClasses:          false
+    style:              dracula
   tableOfContents:
     startLevel:         2
     endLevel:           6
@@ -42,8 +43,8 @@ module:
       target:           static/favicon.ico
 
 params:
-  description:          "The most popular HTML, CSS, and JS library in the world."
-  authors:              "Mark Otto, Jacob Thornton, and Bootstrap contributors"
+  description:          "CampaignAgent design system."
+  authors:              "Daniel Wang and Bootstrap contributors"
   social_image_path:    /docs/5.0/assets/brand/bootstrap-social.png
   social_logo_path:     /docs/5.0/assets/brand/bootstrap-social-logo.png
 

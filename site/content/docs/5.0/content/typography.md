@@ -1,14 +1,14 @@
 ---
 layout: docs
 title: Typography
-description: Documentation and examples for Bootstrap typography, including global settings, headings, body text, lists, and more.
+description: Documentation and examples for typography, including global settings, headings, body text, lists, and more.
 group: content
 toc: true
 ---
 
-## Global settings
+<!-- ## Global settings
 
-Bootstrap sets basic global display, typography, and link styles. When more control is needed, check out the [textual utility classes]({{< docsref "/utilities/text" >}}).
+This is sets basic global display, typography, and link styles. When more control is needed, check out the [textual utility classes]({{< docsref "/utilities/text" >}}).
 
 - Use a [native font stack]({{< docsref "/content/reboot#native-font-stack" >}}) that selects the best `font-family` for each OS and device.
 - For a more inclusive and accessible type scale, we use the browser's default root `font-size` (typically 16px) so visitors can customize their browser defaults as needed.
@@ -16,11 +16,18 @@ Bootstrap sets basic global display, typography, and link styles. When more cont
 - Set the global link color via `$link-color`.
 - Use `$body-bg` to set a `background-color` on the `<body>` (`#fff` by default).
 
-These styles can be found within `_reboot.scss`, and the global variables are defined in `_variables.scss`. Make sure to set `$font-size-base` in `rem`.
+These styles can be found within `_reboot.scss`, and the global variables are defined in `_variables.scss`. Make sure to set `$font-size-base` in `rem`. -->
+
+## Design
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FGwcmnRFu2MmHaHfoyC7otD%2FCAD%3Fnode-id%3D1244%253A101" allowfullscreen></iframe>
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FGwcmnRFu2MmHaHfoyC7otD%2FCAD%3Fnode-id%3D1362%253A161" allowfullscreen></iframe>
+
 
 ## Headings
 
-All HTML headings, `<h1>` through `<h6>`, are available.
+All HTML headings, `<h1>` through `<h3>`, are available.
 
 <table class="table">
   <thead>
@@ -34,69 +41,64 @@ All HTML headings, `<h1>` through `<h6>`, are available.
       <td>
         {{< markdown >}}`<h1></h1>`{{< /markdown >}}
       </td>
-      <td><span class="h1">h1. Bootstrap heading</span></td>
+      <td><span class="h1">h1. This is heading</span></td>
     </tr>
     <tr>
       <td>
         {{< markdown >}}`<h2></h2>`{{< /markdown >}}
       </td>
-      <td><span class="h2">h2. Bootstrap heading</span></td>
+      <td><span class="h2">h2. This is heading</span></td>
     </tr>
     <tr>
       <td>
         {{< markdown >}}`<h3></h3>`{{< /markdown >}}
       </td>
-      <td><span class="h3">h3. Bootstrap heading</span></td>
+      <td><span class="h3">h3. This is heading</span></td>
     </tr>
-    <tr>
+    <!-- <tr>
       <td>
         {{< markdown >}}`<h4></h4>`{{< /markdown >}}
       </td>
-      <td><span class="h4">h4. Bootstrap heading</span></td>
+      <td><span class="h4">h4. This is heading</span></td>
     </tr>
     <tr>
       <td>
         {{< markdown >}}`<h5></h5>`{{< /markdown >}}
       </td>
-      <td><span class="h5">h5. Bootstrap heading</span></td>
+      <td><span class="h5">h5. This is heading</span></td>
     </tr>
     <tr>
       <td>
         {{< markdown >}}`<h6></h6>`{{< /markdown >}}
       </td>
-      <td><span class="h6">h6. Bootstrap heading</span></td>
-    </tr>
+      <td><span class="h6">h6. This is heading</span></td>
+    </tr> -->
   </tbody>
 </table>
 
 ```html
-<h1>h1. Bootstrap heading</h1>
-<h2>h2. Bootstrap heading</h2>
-<h3>h3. Bootstrap heading</h3>
-<h4>h4. Bootstrap heading</h4>
-<h5>h5. Bootstrap heading</h5>
-<h6>h6. Bootstrap heading</h6>
+<h1>h1. This is heading</h1>
+<h2>h2. This is heading</h2>
+<h3>h3. This is heading</h3>
 ```
 
-`.h1` through `.h6` classes are also available, for when you want to match the font styling of a heading but cannot use the associated HTML element.
+
+`.h1` through `.h3` classes are also available, for when you want to match the font styling of a heading but cannot use the associated HTML element.
 
 {{< example >}}
-<p class="h1">h1. Bootstrap heading</p>
-<p class="h2">h2. Bootstrap heading</p>
-<p class="h3">h3. Bootstrap heading</p>
-<p class="h4">h4. Bootstrap heading</p>
-<p class="h5">h5. Bootstrap heading</p>
-<p class="h6">h6. Bootstrap heading</p>
+<p class="h1">h1. This is heading</p>
+<p class="h2">h2. This is heading</p>
+<p class="h3">h3. This is heading</p>
 {{< /example >}}
 
 ### Customizing headings
 
-Use the included utility classes to recreate the small secondary heading text from Bootstrap 3.
+Use the included utility classes to recreate the small secondary heading text from This is 3.
 
 {{< example >}}
 <h3>
   Fancy display heading
-  <small class="text-muted">With faded secondary text</small>
+  <small class="text-primary">With primary color text</small>
 </h3>
 {{< /example >}}
 
@@ -108,18 +110,12 @@ Traditional heading elements are designed to work best in the meat of your page 
   <div class="display-1 pb-3 mb-3 border-bottom">Display 1</div>
   <div class="display-2 pb-3 mb-3 border-bottom">Display 2</div>
   <div class="display-3 pb-3 mb-3 border-bottom">Display 3</div>
-  <div class="display-4 pb-3 mb-3 border-bottom">Display 4</div>
-  <div class="display-5 pb-3 mb-3 border-bottom">Display 5</div>
-  <div class="display-6">Display 6</div>
 </div>
 
 ```html
 <h1 class="display-1">Display 1</h1>
 <h1 class="display-2">Display 2</h1>
 <h1 class="display-3">Display 3</h1>
-<h1 class="display-4">Display 4</h1>
-<h1 class="display-5">Display 5</h1>
-<h1 class="display-6">Display 6</h1>
 ```
 
 Display headings are configured via the `$display-font-sizes` Sass map and two variables, `$display-font-weight` and `$display-line-height`.
@@ -298,23 +294,3 @@ Align terms and descriptions horizontally by using our grid system's predefined 
   </dd>
 </dl>
 {{< /example >}}
-
-## Responsive font sizes
-
-In Bootstrap 5, we've enabled responsive font sizes by default, allowing text to scale more naturally across device and viewport sizes. Have a look at the [RFS page]({{< docsref "/getting-started/rfs" >}}) to find out how this works.
-
-## Sass
-
-### Variables
-
-Headings have some dedicated variables for sizing and spacing.
-
-{{< scss-docs name="headings-variables" file="scss/_variables.scss" >}}
-
-Miscellaneous typography elements covered here and in [Reboot]({{< docsref "/content/reboot" >}}) also have dedicated variables.
-
-{{< scss-docs name="type-variables" file="scss/_variables.scss" >}}
-
-### Mixins
-
-There are no dedicated mixins for typography, but Bootstrap does use [Responsive Font Sizing (RFS)]({{< docsref "/getting-started/rfs" >}}).
