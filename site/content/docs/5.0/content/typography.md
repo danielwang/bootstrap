@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Typography
-description: Documentation and examples for typography, including global settings, headings, body text, lists, and more.
+description: Documentations and examples for typography, including global settings, headings, body text, lists, and more.
 group: content
 toc: true
 ---
