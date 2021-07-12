@@ -18,10 +18,10 @@
           <a class="nav-link p-2{{ if .IsHome }} active" aria-current="page{{ end }}" href="/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Home</a>
         </li>
         <li class="nav-item col-6 col-md-auto mb-0">
-          <a class="nav-link p-2{{ if eq .Page.Layout "docs" }} active" aria-current="true{{ end }}" href="/docs/{{ .Site.Params.docs_version }}/getting-started/introduction/">Docs</a>
+          <a class="nav-link p-2{{ if eq .Page.Layout "docs" }} active" aria-current="true{{ end }}" href="/docs/{{ .Site.Params.docs_version }}/getting-started/introduction/">Tech docs</a>
         </li>
         <li class="nav-item col-6 col-md-auto mb-0">
-          <a class="nav-link p-2{{ if eq .Page.Title "Examples" }} active" aria-current="true{{ end }}" href="https://cad.campaignagent.com.au/">Projects</a>
+          <a class="nav-link p-2{{ if eq .Page.Title "Examples" }} active" aria-current="true{{ end }}" href="/docs/{{ .Site.Params.docs_version }}/examples/">Projects</a>
         </li>
         <li class="nav-item col-6 col-md-auto mb-0">
           <a class="nav-link p-2" href="https://fontawesome.com/v5.15/icons?d=gallery&p=2" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Icons');" target="_blank" rel="noopener">Icons</a>
