@@ -3,7 +3,6 @@
 //
 
 .bd-footer {
-  border: 2px solid rgb(243, 184, 194);
   a {
     color: $gray-700;
     text-decoration: none;
@@ -14,4 +13,26 @@
       text-decoration: underline;
     }
   }
+  .footer-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -1;
+  }
+
+  .footer-wave svg {
+      position: relative;
+      display: block;
+      width: calc(200% + 1.3px);
+      height: 180px;
+  }
+
+  .footer-wave .shape-fill {
+      fill: #ffffff;
+      stroke: #DEE3F0;
+  }
+
 }
